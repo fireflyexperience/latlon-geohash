@@ -14,39 +14,23 @@ Methods summary:
 Install
 -------
 
-### in browser
 
-Download the JavaScript [source](https://raw.githubusercontent.com/chrisveness/geodesy/master/latlon-geohash.js)
-and reference in HTML page using:
-
-    <script src="js/latlon-geohash.js"></script>
-
-### from npm
-
-    npm install --save latlon-geohash
 
 Usage
 -----
 
+Class methods
 
-- `Geohash.encode(lat, lon, [precision])`: encode latitude/longitude point to geohash of given precision
+- `Geohash.encode(location: CLLocationCoordinate2D, precision: Int?) -> Geohash` : encode latitude/longitude point to geohash of given precision
    (number of characters in resulting geohash); if precision is not specified, it is inferred from
    precision of latitude/longitude values.
-- `Geohash.decode(geohash)`: return { lat, lon } of centre of given geohash, to appropriate precision.
-- `Geohash.bounds(geohash)`: return { sw, ne } bounds of given geohash.
-- `Geohash.adjacent(geohash, direction)`: return adjacent cell to given geohash in specified direction (N/S/E/W).
-- `Geohash.neighbours(geohash)`: return all 8 adjacent cells (n/ne/e/se/s/sw/w/nw) to given geohash.
+   
+Instance methods
 
-Note to obtain neighbours as an array, you can use
-
-    var neighboursObj = Geohash.neighbours(geohash);
-    var neighboursArr = Object.keys(neighboursObj).map(function(n) { return neighboursObj[n]; });
-
-Note that the parent of a geocode is simply `geocode.slice(0, -1)`.
-
-### Import within node.js
-
-    var Geohash = require('latlon-geohash');
+- `geohash.decode() -> CLLocationCoordinate2D?`: return { lat, lon } of centre of geohash, to appropriate precision
+- `geohash.bounds() -> (sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D)?`: return { sw, ne } bounds of geohash
+- `geohash.adjacent(direction: GeoHashDirection) -> Geohash`: return adjacent cell to geohash in specified direction (N/S/E/W)
+- `neighbours() -> [GeoHashDirection: Geohash]`: return all 8 adjacent cells (n/ne/e/se/s/sw/w/nw) to geohash
 
 Further details
 ---------------

@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		152072121AF502FB00A98E44 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152072111AF502FB00A98E44 /* CoreLocation.framework */; };
+		153740F41AF4FB5F00D557DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153740F31AF4FB5F00D557DC /* AppDelegate.swift */; };
+		153740F61AF4FB5F00D557DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153740F51AF4FB5F00D557DC /* ViewController.swift */; };
+		153740F91AF4FB5F00D557DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153740F71AF4FB5F00D557DC /* Main.storyboard */; };
+		153740FB1AF4FB5F00D557DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153740FA1AF4FB5F00D557DC /* Images.xcassets */; };
+		153740FE1AF4FB5F00D557DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153740FC1AF4FB5F00D557DC /* LaunchScreen.xib */; };
+		1579AA421B0F2A8800FD4F0B /* LatLonGeoHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1579AA411B0F2A8800FD4F0B /* LatLonGeoHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1579AA481B0F2A8800FD4F0B /* LatLonGeoHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1579AA3D1B0F2A8800FD4F0B /* LatLonGeoHash.framework */; };
+		1579AA511B0F2A8800FD4F0B /* LatLonGeoHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579AA501B0F2A8800FD4F0B /* LatLonGeoHashTests.swift */; };
+		1579AA541B0F2A8800FD4F0B /* LatLonGeoHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1579AA3D1B0F2A8800FD4F0B /* LatLonGeoHash.framework */; };
+		1579AA551B0F2A8800FD4F0B /* LatLonGeoHash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1579AA3D1B0F2A8800FD4F0B /* LatLonGeoHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1579AA5D1B0F2AA200FD4F0B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152072111AF502FB00A98E44 /* CoreLocation.framework */; };
+		1579AA5F1B0F2AEC00FD4F0B /* LatLonGeoHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579AA5E1B0F2AEC00FD4F0B /* LatLonGeoHash.swift */; };
+		1579AA611B0F2AFE00FD4F0B /* LatLonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579AA601B0F2AFE00FD4F0B /* LatLonTests.swift */; };
+		1579AA621B0F2B3600FD4F0B /* LatLonGeoHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579AA5E1B0F2AEC00FD4F0B /* LatLonGeoHash.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		153741041AF4FB5F00D557DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153740E61AF4FB5F00D557DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 153740ED1AF4FB5F00D557DC;
+			remoteInfo = LatLon;
+		};
+		1579AA491B0F2A8800FD4F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153740E61AF4FB5F00D557DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1579AA3C1B0F2A8800FD4F0B;
+			remoteInfo = LatLonGeoHash;
+		};
+		1579AA4B1B0F2A8800FD4F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153740E61AF4FB5F00D557DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 153740ED1AF4FB5F00D557DC;
+			remoteInfo = LatLonGeoHashSample;
+		};
+		1579AA521B0F2A8800FD4F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153740E61AF4FB5F00D557DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1579AA3C1B0F2A8800FD4F0B;
+			remoteInfo = LatLonGeoHash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1579AA591B0F2A8800FD4F0B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1579AA551B0F2A8800FD4F0B /* LatLonGeoHash.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		152072111AF502FB00A98E44 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		153740EE1AF4FB5F00D557DC /* LatLonGeoHashSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatLonGeoHashSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		153740F21AF4FB5F00D557DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153740F31AF4FB5F00D557DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		153740F51AF4FB5F00D557DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		153740F81AF4FB5F00D557DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		153740FA1AF4FB5F00D557DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		153740FD1AF4FB5F00D557DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		153741031AF4FB5F00D557DC /* LatLonGeoHashSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LatLonGeoHashSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		153741081AF4FB5F00D557DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1579AA3D1B0F2A8800FD4F0B /* LatLonGeoHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LatLonGeoHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1579AA401B0F2A8800FD4F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1579AA411B0F2A8800FD4F0B /* LatLonGeoHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LatLonGeoHash.h; sourceTree = "<group>"; };
+		1579AA471B0F2A8800FD4F0B /* LatLonGeoHashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LatLonGeoHashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1579AA4F1B0F2A8800FD4F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1579AA501B0F2A8800FD4F0B /* LatLonGeoHashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatLonGeoHashTests.swift; sourceTree = "<group>"; };
+		1579AA5E1B0F2AEC00FD4F0B /* LatLonGeoHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatLonGeoHash.swift; sourceTree = "<group>"; };
+		1579AA601B0F2AFE00FD4F0B /* LatLonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatLonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		153740EB1AF4FB5F00D557DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579AA541B0F2A8800FD4F0B /* LatLonGeoHash.framework in Frameworks */,
+				152072121AF502FB00A98E44 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153741001AF4FB5F00D557DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579AA391B0F2A8800FD4F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579AA5D1B0F2AA200FD4F0B /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579AA441B0F2A8800FD4F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579AA481B0F2A8800FD4F0B /* LatLonGeoHash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153740E51AF4FB5F00D557DC = {
+			isa = PBXGroup;
+			children = (
+				153740F01AF4FB5F00D557DC /* LatLon */,
+				153741061AF4FB5F00D557DC /* LatLonTests */,
+				1579AA3E1B0F2A8800FD4F0B /* LatLonGeoHash */,
+				1579AA4D1B0F2A8800FD4F0B /* LatLonGeoHashTests */,
+				1579AA371B0F2A0F00FD4F0B /* Frameworks */,
+				153740EF1AF4FB5F00D557DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		153740EF1AF4FB5F00D557DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				153740EE1AF4FB5F00D557DC /* LatLonGeoHashSample.app */,
+				153741031AF4FB5F00D557DC /* LatLonGeoHashSampleTests.xctest */,
+				1579AA3D1B0F2A8800FD4F0B /* LatLonGeoHash.framework */,
+				1579AA471B0F2A8800FD4F0B /* LatLonGeoHashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		153740F01AF4FB5F00D557DC /* LatLon */ = {
+			isa = PBXGroup;
+			children = (
+				153740F31AF4FB5F00D557DC /* AppDelegate.swift */,
+				153740F51AF4FB5F00D557DC /* ViewController.swift */,
+				153740F71AF4FB5F00D557DC /* Main.storyboard */,
+				153740FA1AF4FB5F00D557DC /* Images.xcassets */,
+				153740FC1AF4FB5F00D557DC /* LaunchScreen.xib */,
+				153740F11AF4FB5F00D557DC /* Supporting Files */,
+			);
+			path = LatLon;
+			sourceTree = "<group>";
+		};
+		153740F11AF4FB5F00D557DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				153740F21AF4FB5F00D557DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		153741061AF4FB5F00D557DC /* LatLonTests */ = {
+			isa = PBXGroup;
+			children = (
+				153741071AF4FB5F00D557DC /* Supporting Files */,
+			);
+			path = LatLonTests;
+			sourceTree = "<group>";
+		};
+		153741071AF4FB5F00D557DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				153741081AF4FB5F00D557DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1579AA371B0F2A0F00FD4F0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152072111AF502FB00A98E44 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1579AA3E1B0F2A8800FD4F0B /* LatLonGeoHash */ = {
+			isa = PBXGroup;
+			children = (
+				1579AA411B0F2A8800FD4F0B /* LatLonGeoHash.h */,
+				1579AA5E1B0F2AEC00FD4F0B /* LatLonGeoHash.swift */,
+				1579AA3F1B0F2A8800FD4F0B /* Supporting Files */,
+			);
+			path = LatLonGeoHash;
+			sourceTree = "<group>";
+		};
+		1579AA3F1B0F2A8800FD4F0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1579AA401B0F2A8800FD4F0B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1579AA4D1B0F2A8800FD4F0B /* LatLonGeoHashTests */ = {
+			isa = PBXGroup;
+			children = (
+				1579AA601B0F2AFE00FD4F0B /* LatLonTests.swift */,
+				1579AA501B0F2A8800FD4F0B /* LatLonGeoHashTests.swift */,
+				1579AA4E1B0F2A8800FD4F0B /* Supporting Files */,
+			);
+			path = LatLonGeoHashTests;
+			sourceTree = "<group>";
+		};
+		1579AA4E1B0F2A8800FD4F0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1579AA4F1B0F2A8800FD4F0B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1579AA3A1B0F2A8800FD4F0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579AA421B0F2A8800FD4F0B /* LatLonGeoHash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		153740ED1AF4FB5F00D557DC /* LatLonGeoHashSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1537410D1AF4FB5F00D557DC /* Build configuration list for PBXNativeTarget "LatLonGeoHashSample" */;
+			buildPhases = (
+				153740EA1AF4FB5F00D557DC /* Sources */,
+				153740EB1AF4FB5F00D557DC /* Frameworks */,
+				153740EC1AF4FB5F00D557DC /* Resources */,
+				1579AA591B0F2A8800FD4F0B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1579AA531B0F2A8800FD4F0B /* PBXTargetDependency */,
+			);
+			name = LatLonGeoHashSample;
+			productName = LatLon;
+			productReference = 153740EE1AF4FB5F00D557DC /* LatLonGeoHashSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		153741021AF4FB5F00D557DC /* LatLonGeoHashSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153741101AF4FB5F00D557DC /* Build configuration list for PBXNativeTarget "LatLonGeoHashSampleTests" */;
+			buildPhases = (
+				153740FF1AF4FB5F00D557DC /* Sources */,
+				153741001AF4FB5F00D557DC /* Frameworks */,
+				153741011AF4FB5F00D557DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				153741051AF4FB5F00D557DC /* PBXTargetDependency */,
+			);
+			name = LatLonGeoHashSampleTests;
+			productName = LatLonTests;
+			productReference = 153741031AF4FB5F00D557DC /* LatLonGeoHashSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1579AA3C1B0F2A8800FD4F0B /* LatLonGeoHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1579AA561B0F2A8800FD4F0B /* Build configuration list for PBXNativeTarget "LatLonGeoHash" */;
+			buildPhases = (
+				1579AA381B0F2A8800FD4F0B /* Sources */,
+				1579AA391B0F2A8800FD4F0B /* Frameworks */,
+				1579AA3A1B0F2A8800FD4F0B /* Headers */,
+				1579AA3B1B0F2A8800FD4F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LatLonGeoHash;
+			productName = LatLonGeoHash;
+			productReference = 1579AA3D1B0F2A8800FD4F0B /* LatLonGeoHash.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1579AA461B0F2A8800FD4F0B /* LatLonGeoHashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1579AA5A1B0F2A8800FD4F0B /* Build configuration list for PBXNativeTarget "LatLonGeoHashTests" */;
+			buildPhases = (
+				1579AA431B0F2A8800FD4F0B /* Sources */,
+				1579AA441B0F2A8800FD4F0B /* Frameworks */,
+				1579AA451B0F2A8800FD4F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1579AA4A1B0F2A8800FD4F0B /* PBXTargetDependency */,
+				1579AA4C1B0F2A8800FD4F0B /* PBXTargetDependency */,
+			);
+			name = LatLonGeoHashTests;
+			productName = LatLonGeoHashTests;
+			productReference = 1579AA471B0F2A8800FD4F0B /* LatLonGeoHashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		153740E61AF4FB5F00D557DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Firefly;
+				TargetAttributes = {
+					153740ED1AF4FB5F00D557DC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					153741021AF4FB5F00D557DC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 153740ED1AF4FB5F00D557DC;
+					};
+					1579AA3C1B0F2A8800FD4F0B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					1579AA461B0F2A8800FD4F0B = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 153740ED1AF4FB5F00D557DC;
+					};
+				};
+			};
+			buildConfigurationList = 153740E91AF4FB5F00D557DC /* Build configuration list for PBXProject "LatLonGeoHash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 153740E51AF4FB5F00D557DC;
+			productRefGroup = 153740EF1AF4FB5F00D557DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				153740ED1AF4FB5F00D557DC /* LatLonGeoHashSample */,
+				153741021AF4FB5F00D557DC /* LatLonGeoHashSampleTests */,
+				1579AA3C1B0F2A8800FD4F0B /* LatLonGeoHash */,
+				1579AA461B0F2A8800FD4F0B /* LatLonGeoHashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		153740EC1AF4FB5F00D557DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153740F91AF4FB5F00D557DC /* Main.storyboard in Resources */,
+				153740FE1AF4FB5F00D557DC /* LaunchScreen.xib in Resources */,
+				153740FB1AF4FB5F00D557DC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153741011AF4FB5F00D557DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579AA3B1B0F2A8800FD4F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579AA451B0F2A8800FD4F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		153740EA1AF4FB5F00D557DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153740F61AF4FB5F00D557DC /* ViewController.swift in Sources */,
+				153740F41AF4FB5F00D557DC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153740FF1AF4FB5F00D557DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579AA381B0F2A8800FD4F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579AA5F1B0F2AEC00FD4F0B /* LatLonGeoHash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579AA431B0F2A8800FD4F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579AA511B0F2A8800FD4F0B /* LatLonGeoHashTests.swift in Sources */,
+				1579AA621B0F2B3600FD4F0B /* LatLonGeoHash.swift in Sources */,
+				1579AA611B0F2AFE00FD4F0B /* LatLonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		153741051AF4FB5F00D557DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 153740ED1AF4FB5F00D557DC /* LatLonGeoHashSample */;
+			targetProxy = 153741041AF4FB5F00D557DC /* PBXContainerItemProxy */;
+		};
+		1579AA4A1B0F2A8800FD4F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1579AA3C1B0F2A8800FD4F0B /* LatLonGeoHash */;
+			targetProxy = 1579AA491B0F2A8800FD4F0B /* PBXContainerItemProxy */;
+		};
+		1579AA4C1B0F2A8800FD4F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 153740ED1AF4FB5F00D557DC /* LatLonGeoHashSample */;
+			targetProxy = 1579AA4B1B0F2A8800FD4F0B /* PBXContainerItemProxy */;
+		};
+		1579AA531B0F2A8800FD4F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1579AA3C1B0F2A8800FD4F0B /* LatLonGeoHash */;
+			targetProxy = 1579AA521B0F2A8800FD4F0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		153740F71AF4FB5F00D557DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153740F81AF4FB5F00D557DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		153740FC1AF4FB5F00D557DC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153740FD1AF4FB5F00D557DC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1537410B1AF4FB5F00D557DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1537410C1AF4FB5F00D557DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1537410E1AF4FB5F00D557DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LatLon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = LatLonGeoHashSample;
+			};
+			name = Debug;
+		};
+		1537410F1AF4FB5F00D557DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LatLon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = LatLonGeoHashSample;
+			};
+			name = Release;
+		};
+		153741111AF4FB5F00D557DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LatLonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = LatLonGeoHashSampleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LatLon.app/LatLon";
+			};
+			name = Debug;
+		};
+		153741121AF4FB5F00D557DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LatLonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = LatLonGeoHashSampleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LatLon.app/LatLon";
+			};
+			name = Release;
+		};
+		1579AA571B0F2A8800FD4F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LatLonGeoHash/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1579AA581B0F2A8800FD4F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LatLonGeoHash/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1579AA5B1B0F2A8800FD4F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LatLonGeoHashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LatLonGeoHashSample.app/LatLonGeoHashSample";
+			};
+			name = Debug;
+		};
+		1579AA5C1B0F2A8800FD4F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LatLonGeoHashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LatLonGeoHashSample.app/LatLonGeoHashSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		153740E91AF4FB5F00D557DC /* Build configuration list for PBXProject "LatLonGeoHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1537410B1AF4FB5F00D557DC /* Debug */,
+				1537410C1AF4FB5F00D557DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1537410D1AF4FB5F00D557DC /* Build configuration list for PBXNativeTarget "LatLonGeoHashSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1537410E1AF4FB5F00D557DC /* Debug */,
+				1537410F1AF4FB5F00D557DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		153741101AF4FB5F00D557DC /* Build configuration list for PBXNativeTarget "LatLonGeoHashSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153741111AF4FB5F00D557DC /* Debug */,
+				153741121AF4FB5F00D557DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1579AA561B0F2A8800FD4F0B /* Build configuration list for PBXNativeTarget "LatLonGeoHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1579AA571B0F2A8800FD4F0B /* Debug */,
+				1579AA581B0F2A8800FD4F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1579AA5A1B0F2A8800FD4F0B /* Build configuration list for PBXNativeTarget "LatLonGeoHashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1579AA5B1B0F2A8800FD4F0B /* Debug */,
+				1579AA5C1B0F2A8800FD4F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 153740E61AF4FB5F00D557DC /* Project object */;
+}
