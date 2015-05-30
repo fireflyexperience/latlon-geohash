@@ -1,6 +1,6 @@
 import CoreLocation
 
-typealias Geohash = String
+public typealias Geohash = String
 
 extension String {
 
@@ -17,7 +17,7 @@ extension String {
     }
 }
 
-enum GeoHashDirection {
+public enum GeoHashDirection {
     case N
     case NE
     case E
@@ -33,7 +33,7 @@ enum GeoHashDirection {
 *
 * @namespace
 */
-extension Geohash
+public extension Geohash
 {
     /* (Geohash-specific) Base32 map */
     static let base32 = "0123456789bcdefghjkmnpqrstuvwxyz"
@@ -49,9 +49,9 @@ extension Geohash
     * @throws  Invalid geohash.
     *
     * @example
-    *     var geohash = Geohash.encode(52.205, 0.119, 7) // geohash: "u120fxw"
+    *     var geohash = Geohash.encode(CLLocationCoordinate2D(latitude: 52.205, longitude: 0.119), 7) // geohash: "u120fxw"
     */
-    static func encode(location: CLLocationCoordinate2D, precision: Int?) -> Geohash
+    public static func encode(location: CLLocationCoordinate2D, precision: Int?) -> Geohash
     {
         var precision = precision
 
@@ -127,7 +127,7 @@ extension Geohash
     * @example
     *     var latlon = Geohash.decode("u120fxw") // latlon: { lat: 52.205, lon: 0.1188 }
     */
-    func decode() -> CLLocationCoordinate2D?
+    public func decode() -> CLLocationCoordinate2D?
     {
         // <-- the hard work
         if let b = self.bounds() {
@@ -158,7 +158,7 @@ extension Geohash
     * @returns {{sw: {lat: number, lon: number}, ne: {lat: number, lon: number}}}
     * @throws  Invalid geohash.
     */
-    func bounds() -> (sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D)? {
+    public func bounds() -> (sw: CLLocationCoordinate2D, ne: CLLocationCoordinate2D)? {
         var evenBit = true
 
         var latMin:Double =  -90
@@ -214,7 +214,7 @@ extension Geohash
     * @returns {string} Geocode of adjacent cell.
     * @throws  Invalid geohash.
     */
-    func adjacent(direction: GeoHashDirection) -> Geohash {
+    public func adjacent(direction: GeoHashDirection) -> Geohash {
         // based on github.com/davetroy/geohash-js
 
         let neighbour = [
@@ -264,7 +264,7 @@ extension Geohash
     * @returns {{n,ne,e,se,s,sw,w,nw: string}}
     * @throws  Invalid geohash.
     */
-    func neighbours() -> [GeoHashDirection: Geohash] {
+    public func neighbours() -> [GeoHashDirection: Geohash] {
         return [
             .N:  self.adjacent(.N),
             .NE: self.adjacent(.N).adjacent(.E),
