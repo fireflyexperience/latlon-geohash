@@ -84,7 +84,7 @@ public extension Geohash
         while (geohash.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) < precision) {
             if (evenBit) {
                 // bisect E-W longitude
-                var lonMid = (lonMin + lonMax) / 2
+                let lonMid = (lonMin + lonMax) / 2
                 if (location.longitude > lonMid) {
                     idx = idx*2 + 1
                     lonMin = lonMid
@@ -94,7 +94,7 @@ public extension Geohash
                 }
             } else {
                 // bisect N-S latitude
-                var latMid = (latMin + latMax) / 2
+                let latMid = (latMin + latMax) / 2
                 if (location.latitude > latMid) {
                     idx = idx*2 + 1
                     latMin = latMid
@@ -167,7 +167,7 @@ public extension Geohash
         var lonMax:Double = 180
 
         for i in [0..<self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)] {
-            var chr = self[i]
+            let chr = self[i]
             var idx = Geohash.base32.rangeOfString(chr)
 
             if (idx == nil) {
@@ -178,10 +178,10 @@ public extension Geohash
             let idx2 = distance(index, advance(index, 1))
 
             for n in stride(from: 4, to: 0, by: -1) {
-                var bitN = idx2 >> n & 1
+                let bitN = idx2 >> n & 1
                 if (evenBit) {
                     // longitude
-                    var lonMid = (lonMin+lonMax) / 2
+                    let lonMid = (lonMin+lonMax) / 2
                     if (bitN == 1) {
                         lonMin = lonMid
                     } else {
@@ -189,7 +189,7 @@ public extension Geohash
                     }
                 } else {
                     // latitude
-                    var latMid = (latMin+latMax) / 2
+                    let latMid = (latMin+latMax) / 2
                     if (bitN == 1) {
                         latMin = latMid
                     } else {
@@ -236,7 +236,7 @@ public extension Geohash
         let lastCh = self.substringFromIndex(endIndex)    // last character of hash
         var parent = self.substringToIndex(endIndex) // hash without last character
 
-        var type = self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) % 2
+        let type = self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) % 2
 
         // check for edge-cases which don't share common prefix
         if let borderDir = border[direction] {
