@@ -5,7 +5,7 @@ public typealias Geohash = String
 extension String {
 
     subscript (i: Int) -> Character {
-        return self[advance(self.startIndex, i)]
+        return self[self.startIndex.advancedBy(i)]
     }
 
     subscript (i: Int) -> String {
@@ -13,7 +13,7 @@ extension String {
     }
 
     subscript (r: Range<Int>) -> String {
-        return substringWithRange(Range(start: advance(startIndex, r.startIndex), end: advance(startIndex, r.endIndex)))
+        return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
     }
 }
 
@@ -168,16 +168,16 @@ public extension Geohash
 
         for i in [0..<self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)] {
             let chr = self[i]
-            var idx = Geohash.base32.rangeOfString(chr)
+            let idx = Geohash.base32.rangeOfString(chr)
 
             if (idx == nil) {
                 return nil
             }
 
             let index = idx!.startIndex
-            let idx2 = distance(index, advance(index, 1))
+            let idx2 = index.distanceTo(index.advancedBy(1))
 
-            for n in stride(from: 4, to: 0, by: -1) {
+            for n in 4.stride(to: 0, by: -1) {
                 let bitN = idx2 >> n & 1
                 if (evenBit) {
                     // longitude
@@ -231,7 +231,7 @@ public extension Geohash
             GeoHashDirection.W: [ "0145hjnp", "028b"     ]
         ]
 
-        let endIndex = advance(self.endIndex, -1)
+        let endIndex = self.endIndex.advancedBy(-1)
 
         let lastCh = self.substringFromIndex(endIndex)    // last character of hash
         var parent = self.substringToIndex(endIndex) // hash without last character
