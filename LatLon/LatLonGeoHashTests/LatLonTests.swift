@@ -22,14 +22,14 @@ class LatLonTests: XCTestCase {
         super.tearDown()
     }
 
-    func testOne() {
+    func testEncodeJutland() {
         let location = CLLocationCoordinate2D(latitude: 57.648, longitude: 10.410)
         let geohash = Geohash.encode(location, precision: 6)
 
         XCTAssert(geohash == "u4pruy", "encode Jutland")
     }
 
-    func testTwo() {
+    func testDecodeJutland() {
         let location = CLLocationCoordinate2D(latitude: 57.648, longitude: 10.410)
         let geohash = Geohash("u4pruy")
 
@@ -38,14 +38,14 @@ class LatLonTests: XCTestCase {
         }
     }
 
-    func testThree() {
+    func testEncodeCuritiba() {
         let location = CLLocationCoordinate2D(latitude: -25.38262, longitude: -49.26561)
         let geohash = Geohash.encode(location, precision: 8)
 
         XCTAssert(geohash == "6gkzwgjz", "encode Curitiba")
     }
 
-    func testFour() {
+    func testDecodeCuritiba() {
         let location = CLLocationCoordinate2D(latitude: -25.38262, longitude: -49.26561)
         let geohash = Geohash("6gkzwgjz")
 
@@ -53,8 +53,24 @@ class LatLonTests: XCTestCase {
             XCTAssert(loca.latitude == location.latitude && loca.longitude == location.longitude, "decode Curitiba")
         }
     }
+    
+    func testDecodeZeroZero() {
+        let location = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+        let geohash = Geohash("7zzzzzzzz")
+        
+        if let loca = geohash.decode() {
+            XCTAssert(loca.latitude == location.latitude && loca.longitude == location.longitude, "decode 0,0")
+        }
+    }
+    
+    func testEncodeZeroZero() {
+        let location = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+        let geohash = Geohash.encode(location, precision: 9)
+        
+        XCTAssert(geohash == "7zzzzzzzz", "encode 0,0")
+    }
 
-    func testFive() {
+    func testNeighbours() {
         let neighbours = Geohash("ezzz").neighbours()
         let test = [
                         GeoHashDirection.N: "gbpb",
