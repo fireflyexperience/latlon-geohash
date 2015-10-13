@@ -2,18 +2,14 @@ import CoreLocation
 
 public typealias Geohash = String
 
-extension String {
-
+extension String
+{
     subscript (i: Int) -> Character {
         return self[self.startIndex.advancedBy(i)]
     }
 
     subscript (i: Int) -> String {
         return String(self[i] as Character)
-    }
-
-    subscript (r: Range<Int>) -> String {
-        return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
     }
 }
 
@@ -166,8 +162,8 @@ public extension Geohash
         var lonMin:Double = -180
         var lonMax:Double = 180
 
-        for i in [0..<self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)] {
-            let chr = self[i]
+        for i in self.characters {
+            let chr = String(i)
             let idx = Geohash.base32.rangeOfString(chr)
 
             if (idx == nil) {
