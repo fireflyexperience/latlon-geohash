@@ -49,8 +49,6 @@ public extension Geohash
     */
     public static func encode(location: CLLocationCoordinate2D, precision: Int?) -> Geohash
     {
-        var precision = precision
-
         // infer precision?
         if (precision == nil) {
             // refine geohash until it matches precision of supplied lat/lon
@@ -59,12 +57,10 @@ public extension Geohash
 
                 if let posn = hash.decode() {
                     if (posn.latitude == location.latitude && posn.longitude == location.longitude) {
-                        Geohash(hash)
+                        return Geohash(hash)
                     }
                 }
             }
-
-            precision = 12 // set to maximum
         }
 
         var idx = 0 // index into base32 map
